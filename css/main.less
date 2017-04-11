@@ -1,0 +1,106 @@
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: darkblue;
+}
+
+.container {
+  width: 90%;
+  // display: flex;
+  // align-items: center;
+}
+
+.boxed {
+  border: 1px solid deeppink;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.header {
+  width: 90%;
+  text-align: center;
+  font-family: "Josefin Slab", serif;
+  // font-family: "Amatic SC", serif;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#name,
+.section-header,
+.position {
+  font-family: "Josefin Slab", serif;
+  // font-family: "Amatic SC", serif;
+}
+
+#name { font-size: 24pt; }
+
+.section-header {
+  font-size: 18pt;
+}
+
+.position {
+  font-size: 14pt;
+}
+
+#contact-info {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 12pt;
+}
+
+a {
+  text-decoration: none;
+  color: inherit!important;
+}
+a:hover {
+  text-decoration: none;
+  border-bottom: 0.5px dotted darkblue;
+  color: inherit!important;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+.work-tiles {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.work-tile {
+  width: 250px;
+  height: 250px;
+  border: 1px solid darkblue;
+  padding: 15px;
+  border-radius: 15px;
+  background: #f0f0f0;
+  // background-image: url("./images/grey-geometric.jpg");
+  // http://apple.stackexchange.com/questions/251180/reduce-opacity-of-existing-image
+}
+
+.work-tile-title {
+  text-transform: uppercase;
+  font-family: "Josefin Slab", serif;
+  font-size: 14pt;
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+.work-tile-title > span {
+  font-size: 12pt!important;
+  font-family: "Open Sans Condensed"!important;
+  text-transform: none!important;
+}
+
+.work-tile-logline {
+  padding: 5%;
+  height: 150px;
+}
+
+.work-tile-meets {
+  font-family: "Josefin Slab", serif;
+  text-align: center;
+}
