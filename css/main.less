@@ -1,44 +1,52 @@
 body {
   font-family: "Open Sans Condensed", sans-serif;
   color: darkblue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.container {
-  width: 90%;
-  // display: flex;
-  // align-items: center;
+.back-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  box-shadow: 0 0 5px -1px rgba(0,0,0,0.4);
+  background-color: darkblue;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 100;
+  position: fixed;
+  right: 15px;
+  top: 15px;
 }
 
-.boxed {
-  border: 1px solid deeppink;
-  padding: 15px;
-  border-radius: 15px;
+.back-button > span {
+  color: #f0f0f0!important;
+  text-align: center;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.back-button > span:hover {
+  color: #f0f0f0!important;
+  text-decoration: none!important;
 }
 
 .header {
-  width: 90%;
   text-align: center;
   font-family: "Josefin Slab", serif;
-  // font-family: "Amatic SC", serif;
 }
 
-.header-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#name,
-.section-header,
-.position {
+#name, .section-header, .position {
   font-family: "Josefin Slab", serif;
-  // font-family: "Amatic SC", serif;
 }
 
-#name { font-size: 24pt; }
+#name { font-size: 26pt; }
 
 .section-header {
-  font-size: 18pt;
+  font-size: 20pt;
+  text-align: center;
 }
 
 .position {
@@ -56,12 +64,53 @@ a {
 }
 a:hover {
   text-decoration: none;
-  border-bottom: 0.5px dotted darkblue;
+  border-bottom: 0.5px dotted darkgreen;
   color: inherit!important;
 }
 
 ul {
   list-style-type: circle;
+}
+
+.header-container, .work-experience-container, .education-container, .trainings-container, .awards-container, .references-container, .work-tile-container {
+  width: 100%;
+  padding: 25px;
+}
+
+.header-container, .education-container, .awards-container {
+  background-color: #f0f0f0;
+}
+
+.work-experience, .education, .trainings, .awards, .references {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.work-experience-tile, .education-tile, .awards-tile, .references-tile {
+  width: 300px;
+  border: 1px solid darkblue;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  background: #f0f0f0;
+  box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+  vertical-align: middle;
+}
+
+.references-tile, .education-tile {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.training-name, .training-teacher, .training-date {
+  width: 15%;
+}
+
+tr:nth-child(odd) {
+  background-color: #f0f0f0;
 }
 
 .work-tiles {
@@ -77,6 +126,8 @@ ul {
   padding: 15px;
   border-radius: 15px;
   background: #f0f0f0;
+  box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+  margin: 20px;
   // background-image: url("./images/grey-geometric.jpg");
   // http://apple.stackexchange.com/questions/251180/reduce-opacity-of-existing-image
 }
@@ -98,9 +149,15 @@ ul {
 .work-tile-logline {
   padding: 5%;
   height: 150px;
+  text-align: justify;
 }
 
 .work-tile-meets {
   font-family: "Josefin Slab", serif;
   text-align: center;
+}
+
+.extra-award-info, .reference-company, .type-of-script, #gpa, #minor {
+  font-size: 10pt;
+  font-family: "Josefin Slab", serif;
 }

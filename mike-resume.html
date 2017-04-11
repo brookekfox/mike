@@ -3,7 +3,7 @@
   <head>
       <meta charset="utf-8">
       <title>Mike Sorce</title>
-      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+      <link rel="shortcut icon" type="image/x-icon" href="css/images/circles.png" />
       <link href="css/main.less" rel="stylesheet">
       <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,200,100' rel='stylesheet' type='text/css'>
       <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
@@ -12,19 +12,23 @@
       <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
   </head>
   <body>
+    <a class="back-button" href="./index.html">
+      <span>BACK</span>
+    </a>
 
-    <div class="container boxed">
-      <div class="header-container">
-        <div class="header boxed">
-          <p id="name">Mike Sorce</p>
-          <p id="contact-info">928 899 3911 | <a href="mailto:mikevsorce@gmail.com">mike.v.sorce@gmail.com</a> | Los Angeles, California</p>
-        </div>
+    <div class="header-container">
+      <div class="header">
+        <p id="name">Mike Sorce</p>
+        <p id="contact-info">
+          928 899 3911 | <a href="mailto:mikevsorce@gmail.com">mike.v.sorce@gmail.com</a> | Los Angeles, California
+        </p>
       </div>
+    </div>
 
-      <div class="flex-container">
-        <div class="work-experience boxed">
-          <p class="section-header">Work Experience</p>
-          <div class="work-experience-line boxed" id="abrams-lit">
+      <div class="work-experience-container">
+        <p class="section-header">Work Experience</p>
+        <div class="work-experience">
+          <div class="work-experience-tile" id="abrams-lit">
             <div class="position">
               Executive Assistant to Head of Literary
             </div>
@@ -46,7 +50,7 @@
             </div>
           </div>
 
-          <div class="work-experience-line boxed" id="abrams-mailroom">
+          <div class="work-experience-tile" id="abrams-mailroom">
             <div class="position">
               Mailroom Assistant
             </div>
@@ -66,7 +70,7 @@
             </div>
           </div>
 
-          <div class="work-experience-line boxed" id="pat-quinn">
+          <div class="work-experience-tile" id="pat-quinn">
             <div class="position">
               Assistant
             </div>
@@ -86,7 +90,7 @@
             </div>
           </div>
 
-          <div class="work-experience-line boxed" id="intrigue">
+          <div class="work-experience-tile" id="intrigue">
             <div class="position">
               Office Assistant
             </div>
@@ -107,7 +111,7 @@
             </div>
           </div>
 
-          <div class="work-experience-line boxed" id="abbot">
+          <div class="work-experience-tile" id="abbot">
             <div class="position">
               Script Reader
             </div>
@@ -126,123 +130,127 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="education boxed">
-          <p class="section-header">Education</p>
-          <div class="education-container">
-            <div class="education-line boxed" id="masters">
-              <div class="degree">
-                Master of Science in Mathematics Education
-              </div>
-              <div class="graduation">
-                <div class="institution">
-                  Northern Arizona University, Flagstaff, Arizona
-                </div>
-                <div class="year">
-                  May 2014 <span id="gpa">GPA: 3.92</span>
-                </div>
-              </div>
+      <div class="education-container">
+        <p class="section-header">Education</p>
+        <div class="education">
+          <div class="education-tile" id="masters">
+            <div class="degree">
+              Master of Science in Mathematics Education
             </div>
-            <div class="education-line boxed" id="bachelors">
-              <div class="degree">
-                Bachelor of Science in Mathematics Education, <span id="minor">minor in Electronic Media and Film</span>
+            <div class="graduation">
+              <div class="institution">
+                Northern Arizona University, Flagstaff, Arizona
               </div>
-              <div class="graduation">
-                <div class="institution">
-                  Northern Arizona University, Flagstaff, Arizona
-                </div>
-                <div class="year">
-                  May 2012
-                </div>
+              <div class="year">
+                May 2014
               </div>
-              <div class="research">
-                <p>Producer, student-led TV station UTV62</p>
-                <p>2009-2011</p>
-              </div>
+              <p class="highlights">
+                GPA: 3.92
+              </p>
             </div>
           </div>
-        </div>
-
-        <div class="other-experience boxed">
-          <p class="section-header">Training</p>
-          <div class="list-of-trainings">
-            <table>
-              <tr>
-                <td class="training-name">Writer's Assistant Class</td>
-                <td class="training-teacher">Louisa Levy</td>
-                <td class="training-date">April 2017</td>
-              </tr>
-              <tr>
-                <td class="training-name">Pitch Workshop</td>
-                <td class="training-teacher">Marla White</td>
-                <td class="training-date">July 2016</td>
-              </tr>
-              <tr>
-                <td class="training-name">Story Structure</td>
-                <td class="training-teacher">Talton Wingate</td>
-                <td class="training-date">August 2015</td>
-              </tr>
-              <tr>
-                <td class="training-name">Advanced TV Writing</td>
-                <td class="training-teacher">Lauren Ludwig</td>
-                <td class="training-date">May 2015</td>
-              </tr>
-              <tr>
-                <td class="training-name">UCB Improv 301</td>
-                <td class="training-teacher">Pam Murphy</td>
-                <td class="training-date">April 2015</td>
-              </tr>
-              <tr>
-                <td class="training-name">UCB Improv 201</td>
-                <td class="training-teacher">Brian Finkelstein</td>
-                <td class="training-date">February 2015</td>
-              </tr>
-              <tr>
-                <td class="training-name">TV Writing</td>
-                <td class="training-teacher">Corey Mandell</td>
-                <td class="training-date">January 2015</td>
-              </tr>
-              <tr>
-                <td class="training-name">UCB Improv 101</td>
-                <td class="training-teacher">Ben Siemon</td>
-                <td class="training-date">December 2014</td>
-              </tr>
-              <tr>
-                <td class="training-name">Pilot Workshop</td>
-                <td class="training-teacher">Jason Grote</td>
-                <td class="training-date">July 2014</td>
-              </tr>
-              <tr>
-                <td class="training-name">Creative Writing</td>
-                <td class="training-teacher">DC Pierson</td>
-                <td class="training-date">April 2014</td>
-              </tr>
-            </table>
+          <div class="education-tile" id="bachelors">
+            <div class="degree">
+              Bachelor of Science in Mathematics Education, <p id="minor">minor in Electronic Media and Film</p>
+            </div>
+            <div class="graduation">
+              <div class="institution">
+                Northern Arizona University, Flagstaff, Arizona
+              </div>
+              <div class="year">
+                May 2012
+              </div>
+            </div>
+            <p class="highlights">
+              Producer, student-led TV station UTV62 <span class="extra-award-info">(2009-2011)</span>
+            </p>
           </div>
         </div>
+      </div>
 
-        <div class="other-experience boxed">
-          <p class="section-header">Awards</p>
-          <div class="work-experience-line boxed" id="humane">
+      <div class="trainings-container">
+        <p class="section-header">Training</p>
+        <div class="trainings">
+          <table>
+            <tr>
+              <td class="training-name">Writers' Assistant Class</td>
+              <td class="training-teacher">Louisa Levy</td>
+              <td class="training-date">April 2017</td>
+            </tr>
+            <tr>
+              <td class="training-name">Pitch Workshop</td>
+              <td class="training-teacher">Marla White</td>
+              <td class="training-date">July 2016</td>
+            </tr>
+            <tr>
+              <td class="training-name">Story Structure</td>
+              <td class="training-teacher">Talton Wingate</td>
+              <td class="training-date">August 2015</td>
+            </tr>
+            <tr>
+              <td class="training-name">Advanced TV Writing</td>
+              <td class="training-teacher">Lauren Ludwig</td>
+              <td class="training-date">May 2015</td>
+            </tr>
+            <tr>
+              <td class="training-name">UCB Improv 301</td>
+              <td class="training-teacher">Pam Murphy</td>
+              <td class="training-date">April 2015</td>
+            </tr>
+            <tr>
+              <td class="training-name">UCB Improv 201</td>
+              <td class="training-teacher">Brian Finkelstein</td>
+              <td class="training-date">February 2015</td>
+            </tr>
+            <tr>
+              <td class="training-name">TV Writing</td>
+              <td class="training-teacher">Corey Mandell</td>
+              <td class="training-date">January 2015</td>
+            </tr>
+            <tr>
+              <td class="training-name">UCB Improv 101</td>
+              <td class="training-teacher">Ben Siemon</td>
+              <td class="training-date">December 2014</td>
+            </tr>
+            <tr>
+              <td class="training-name">Pilot Workshop</td>
+              <td class="training-teacher">Jason Grote</td>
+              <td class="training-date">July 2014</td>
+            </tr>
+            <tr>
+              <td class="training-name">Creative Writing</td>
+              <td class="training-teacher">DC Pierson</td>
+              <td class="training-date">April 2014</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="awards-container">
+        <p class="section-header">Awards</p>
+        <div class="awards">
+          <div class="awards-tile" id="humane">
             <div class="script-title">
-              HUMANE (pilot)
+              HUMANE <span class="type-of-script">(pilot)</span>
             </div>
             <div class="role">
               <ul class="role-items">
                 <li>
-                  <span class="award-name">Bitch List</span> <span class="extra-info">(top unproduced scripts with a female lead)</span>
+                  <span class="award-name">Bitch List</span> <span class="extra-award-info">(top unproduced scripts with a female lead)</span>
                 </li>
                 <li>
                   <span class="award-name">Austin Film Festival</span>
-                  <span class="award-place">2<sp>nd</sp> Round <span class="extra-info">(top 15%)</span></span>
+                  <span class="award-place">2<sp>nd</sp> Round <span class="extra-award-info">(top 15%)</span></span>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div class="work-experience-line boxed" id="one-day-notice">
+          <div class="awards-tile" id="one-day-notice">
             <div class="script-title">
-              ONE DAY NOTICE (feature)
+              ONE DAY NOTICE <span class="type-of-script">(feature)</span>
             </div>
             <div class="role">
               <ul class="role-items">
@@ -252,7 +260,7 @@
                 </li>
                 <li>
                   <span class="award-name">Austin Film Festival</span>
-                  <span class="award-place">2<sp>nd</sp> Round <span class="extra-info">(top 15%)</span></span>
+                  <span class="award-place">2<sp>nd</sp> Round <span class="extra-award-info">(top 15%)</span></span>
                 </li>
                 <li>
                   <span class="award-name">Search for New Blood</span>
@@ -262,26 +270,21 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="other-experience boxed">
-          <p class="section-header">References</p>
-          <div class="work-experience-line boxed" id="paul">
-            <div class="reference">
-              Paul Weitzman <span class="reference-company">Abrams Artists Agency</span>
-            </div>
-          </div>
+      <div class="references-container">
+        <p class="section-header">References</p>
+        <div class="references">
+        <div class="references-tile" id="paul">
+          Paul Weitzman <p class="reference-company">Abrams Artists Agency</p>
+        </div>
 
-          <div class="work-experience-line boxed" id="lucas">
-            <div class="reference">
-              Lucas Carter <span class="reference-company">Intrigue Entertainment</span>
-            </div>
-          </div>
+        <div class="references-tile" id="lucas">
+          Lucas Carter <p class="reference-company">Intrigue Entertainment</p>
+        </div>
 
-          <div class="work-experience-line boxed" id="pat">
-            <div class="reference">
-              Pat Quinn <span class="reference-company">Pat Quinn Media Management</span>
-            </div>
-          </div>
+        <div class="references-tile" id="pat">
+          Pat Quinn <p class="reference-company">Pat Quinn Media Management</p>
         </div>
       </div>
     </div>
